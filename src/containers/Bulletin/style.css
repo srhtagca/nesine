@@ -1,0 +1,46 @@
+.table {
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid black;
+}
+
+.row {
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.heading {
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  background-color: burlywood;
+  height: 70px;
+  z-index: 1;
+}
+
+.cell {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.row:not(.heading):nth-child(even) {
+  height: 40px;
+}
+
+.row .cell:first-child {
+  flex-basis: 400px;
+}
+
+.cell.clickable {
+  cursor: pointer;
+}
+
+.cell.selected {
+  background-color: yellow;
+}
