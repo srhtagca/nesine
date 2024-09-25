@@ -29,8 +29,8 @@ export const Row = ({ item }: { item: DataType }) => {
         <div className="cell">+99</div>
       </div>
       <div className="row">
-        <div className="cell">
-          <strong>{item.C}</strong> {`${item.T} ${item.N}`}
+        <div className="cell" style={{ gap: "5px" }}>
+          <strong>{item.C} </strong> {`${item.T} ${item.N}`}
         </div>
         <div className="cell">Yorumlar</div>
         <div className="cell">{item?.OCG[1]?.MBS}</div>

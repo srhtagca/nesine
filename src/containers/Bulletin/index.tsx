@@ -6,10 +6,13 @@ import { DataType } from "../../types/dataTypes";
 import { Virtuoso } from "react-virtuoso";
 import { Header } from "./components/Header";
 
-export const Table = () => {
+export const Bulletin = () => {
   const { data, error, isLoading } = useSWR<DataType[]>(
     "https://nesine-case-study.onrender.com/bets",
-    fetcher
+    fetcher,
+    {
+      revalidateOnFocus: false,
+    }
   );
 
   if (isLoading) {

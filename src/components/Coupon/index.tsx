@@ -15,7 +15,7 @@ export const Coupon = () => {
       <div className="coupon-items-container">
         {addedCouponList.length
           ? addedCouponList.map((item) => (
-              <div className="coupon-item">
+              <div className="coupon-item" key={item.OC_ID}>
                 <span>{item.MBS}</span>
                 <span>Kod: {item.C}</span>
                 <span>Mac: {item.N}</span>

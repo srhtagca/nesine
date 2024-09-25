@@ -1,4 +1,4 @@
-import { Table } from "./containers/Bulletin";
+import { Bulletin } from "./containers/Bulletin";
 import { CouponContextProvider } from "./context/CouponContext";
 import { Coupon } from "./components/Coupon";
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <CouponContextProvider>
-        <Table />
+        <Bulletin />
         <Coupon />
       </CouponContextProvider>
     </div>
