@@ -61,7 +61,7 @@ export const Row = ({ item }: { item: DataType }) => {
                     : ""
                 }`}
               >
-                {item?.OCG[sortedOCG]?.OC[oddList]?.O}
+                {item?.OCG[sortedOCG]?.OC[oddList]?.O ?? "-"}
               </div>
             );
           })
